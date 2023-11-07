@@ -1,11 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    Agregar Alumnos
-</body>
-</html>
+
+
+
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form [formGroup]="alumno" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for ="matricula" class="form-label">Matricula</label>
+                <input type="text" placeholder="Matricula" id ="matricula" name="matricula" 
+                class="form-control" formControlName="matricula">
+                
+            </div>
+            <div class="mb-3">
+                <label for ="matricula" class="form-label">Nombre</label>
+                <input type="text" placeholder="Nombre" id ="nombre" name="nombre"
+                class="form-control" formControlName="nombre">
+            </div>
+            <div class="mb-3">
+                <label for ="matricula" class="form-label">APaterno</label>
+                <input type="text" placeholder="APaterno" id ="apaterno" name="apaterno"
+                class="form-control" formControlName="apaterno">
+            </div>
+            
+            <div class="mb-3">
+                <label for ="matricula" class="form-label">AMaterno</label>
+                <input type="text" placeholder="AMaterno" id ="amaterno" name="amaterno"
+                class="form-control" formControlName="amaterno">
+            </div>
+            <div class="mb-3">
+                <label for ="matricula" class="form-label">Correo</label>
+                <input type="text" placeholder="Correo" id ="correo" name="correo"
+                class="form-control" formControlName="correo">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Agregar</button>
+            </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
